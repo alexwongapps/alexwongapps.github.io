@@ -5,15 +5,17 @@ import cornholeIcon from './cornhole.jpeg';
 import coryatIcon from './coryat.png';
 import instransposeIcon from './instranspose.jpeg';
 import mentalmathIcon from './mentalmath.png';
+import iosIcon from './ios.png'
+import androidIcon from './android.png'
 
 class AppCard extends React.Component {
     render() {
         return <div className="appCard" style={{ backgroundColor: this.props.color }}>
             <div className="cardHeader">
                 <img className="cardImage" src={this.props.icon} />
-                <div className="cardTitle">{this.props.name}
+                <div className={`cardTitle ${this.props.androidLink ? "android" : ""}`}>{this.props.name}
                 </div>
-                <div className="cardLinks"><a href={this.props.iosLink}>iOS</a>{this.props.androidLink && <a href={this.props.androidLink}>Android</a>}</div>
+                <div className={`cardLinks ${this.props.androidLink ? "android" : ""}`}><a href={this.props.iosLink} target="_blank" rel="noreferrer noopener"><img src={iosIcon} /></a>{this.props.androidLink && <a href={this.props.androidLink} target="_blank" rel="noreferrer noopener"><img src={androidIcon} /></a>}</div>
             </div>
             <div className="cardTagline">{this.props.tagline}</div>
             <div className="cardDescription">

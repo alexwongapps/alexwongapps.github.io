@@ -103,7 +103,7 @@ body {
 .cardHeader div {
   display: flex;
   justify-content: center;
-  align-items: center;
+  margin-top: 20px;
 }
 
 .cardTitle {
@@ -111,9 +111,23 @@ body {
   font-size: 30px;
 }
 
+.cardTitle.android {
+  position: relative;
+  left: -50px;
+}
+
 .cardLinks {
-  width: 35%;
+  width: 20%;
   font-size: 30px;
+}
+
+.cardLinks img {
+  height: 35px;
+}
+
+.cardLinks.android {
+  position: relative;
+  left: -70px;
 }
 
 .cardLinks a:nth-child(2) {
