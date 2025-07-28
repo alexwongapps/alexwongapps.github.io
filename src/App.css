@@ -1,148 +1,48 @@
-.App {
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.img-thumbnail {
+  max-height: 150px;
+  object-fit: cover;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.bg-cornhole {
+  background-color: #fcaca7;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.bg-coryat {
+  background-color: #94cefb;
 }
 
-.App-link {
-  color: #61dafb;
+.bg-transpose {
+  background-color: #ddc79f;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.bg-math {
+  background-color: #adbbfa;
 }
 
-body {
-  font-family: 'Rockwell', serif;
-  background-color: #FFFFFF;
+.action-btn {
+  background-color: #000;
+  color: #fff;
+  border-radius: 50rem;
+  padding: 0.5rem 1rem;
+  border: none;
+  text-decoration: none; /* Remove underline */
+  display: inline-block;
+  transition: background-color 0.2s ease;
 }
 
-.header {
-  display: table;
-  table-layout: fixed;
-  width: 100%;
-  text-align: center;
-  padding-top: 15px;
-  font-size: 50px;
-  font-weight: bold;
-  background-color: #DDDDDD;
+.action-btn:hover {
+  background-color: #555;
+  color: #fff;
 }
 
-.header div:nth-child(2) {
-  width: 20%;
-}
-
-.headerLogo {
-  height: 100px;
-  width: 100px;
-  border-radius: 50%;
-  box-shadow: 5px 5px 5px #888888;
-}
-
-.header div {
-  display: table-cell;
-  vertical-align: middle;
-}
-
-.cards {
-  margin-top: 15px;
-}
-
-.rowCards {
-  display: flex;
-  justify-content: space-around;
-  margin-bottom: 25px;
-}
-
-.appCard {
-  border-radius: 10px;
-  width: 48%;
-  box-shadow: 10px 10px 10px #888888;
-}
-
-.cardHeader {
-  display: flex;
-  margin-bottom: 20px;
-  font-weight: bold;
-  margin: 10px;
-  margin-bottom: 20px;
-}
-
-.cardImage {
-  width: 10%;
-  height: 10%;
-  border-radius: 10px;
-  box-shadow: 2px 2px 2px 2px #888888;
-}
-
-.cardHeader div {
-  display: flex;
-  justify-content: center;
-  margin-top: 20px;
-}
-
-.cardTitle {
-  flex: 1;
-  font-size: 30px;
-}
-
-.cardTitle.android {
-  position: relative;
-  left: -50px;
-}
-
-.cardLinks {
-  width: 20%;
-  font-size: 30px;
-}
-
-.cardLinks img {
-  height: 35px;
-}
-
-.cardLinks.android {
-  position: relative;
-  left: -70px;
-}
-
-.cardLinks a:nth-child(2) {
-  margin-left: 10px;
-}
-
-.cardTagline {
-  text-align: center;
-  margin-left: 10px;
-  margin-right: 10px;
-  font-weight: bold;
-  font-size: 20px;
-}
-
-.cardDescription {
-  margin-left: 10px;
-  margin-right: 10px;
+.action-btn:active {
+  background-color: #888;
+  color: #fff;
 }
